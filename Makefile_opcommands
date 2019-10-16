@@ -1,0 +1,53 @@
+include $(TOPDIR)/rules.mk
+
+# Name, version and release number
+# The name and version of your package are used to define the variable to point to the build directory of your package: $(PKG_BUILD_DIR)
+PKG_NAME:=raspi_opcommands
+PKG_VERSION:=1.0
+PKG_RELEASE:=1
+
+# Source settings (i.e. where to find the source codes)
+# This is a custom variable, used below
+SOURCE_DIR:=/v18.06.2.git/raspi_opcommands
+
+include $(INCLUDE_DIR)/package.mk
+TARGET_CC = aarch64-openwrt-linux-musl-gcc -static
+TARGET_INCLUDE_PATH = -I /v18.06.2.git/build_dir/target-aarch64_cortex-a53_musl/curl-7.64.0/include/curl/  -I /v18.06.2.git/build_dir/target-aarch64_cortex-a53_musl/json-c-0.12.1/ -I /v18.06.2.git/build_dir/target-aarch64_cortex-a53_musl/libconfig-1.7.2/lib/ -I /v18.06.2.git/staging_dir/toolchain-aarch64_cortex-a53_gcc-7.4.0_musl/include/
+
+TARGET_LIBS = -lcurl  -ljson-c -lssl -lmbedtls  -lmbedcrypto -lmbedx509 -lconfig
+TARGET_LDFLAGS = -L/v18.06.2.git/staging_dir/target-aarch64_cortex-a53_musl/usr/lib/
+
+# Package definition; instructs on how and where our package will appear in the overall configuration menu ('make menuconfig')
+define Package/raspi_opcommands
+	SECTION:=utils
+	CATEGORY:=Utilities
+	TITLE:=raspi opcmd n/w restart reboot ..!
+endef
+# Package description; a more verbose description on what our package does
+define Package/raspi_opcommands/description
+  A simple "operational commands n/w restart reboot..!" -application.
+endef
+
+# Package preparation instructions; create the build directory and copy the source code. 
+# The last command is necessary to ensure our preparation instructions remain compatible with the patching system.
+define Build/Prepare
+	mkdir -p $(PKG_BUILD_DIR)
+	cp $(SOURCE_DIR)/* $(PKG_BUILD_DIR)
+	$(Build/Patch)
+endef
+
+# Package build instructions; invoke the target-specific compiler to first compile the source file, and then to link the file into the final executable
+define Build/Compile
+	$(TARGET_CC) $(TARGET_CFLAGS) $(TARGET_INCLUDE_PATH) -o $(PKG_BUILD_DIR)/raspi_optest.o -c $(PKG_BUILD_DIR)/optest.c
+	$(TARGET_CC) $(TARGET_LDFLAGS) -o $(PKG_BUILD_DIR)/$1 $(PKG_BUILD_DIR)/raspi_optest.o $(TARGET_LIBS)
+endef
+
+# Package install instructions; create a directory inside the package to hold our executable, and then copy the executable we built previously into the folder
+define Package/raspi_opcommands/install
+	$(INSTALL_DIR) $(1)/usr/bin
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/raspi_opcommands $(1)/usr/bin
+endef
+
+# This command is always the last, it uses the definitions and variables we give above in order to get the job done
+$(eval $(call BuildPackage,raspi_opcommands))
+
