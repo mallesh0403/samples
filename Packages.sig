@@ -1,2 +1,2 @@
 untrusted comment: signature from OpenWrt 18.06 release signature
-RWQQNaxzzE5Z43HM6znkTArY4mHePhUOCYew2w6wuLevNuTnqsRbKDL2fSkoMiqAbgoJcNyHjOEGuA00pcB0+R+sHnCvGmi2IAM=
+RWQQNaxzzE5Z49nxOe/WQDCmbJ0mY6GlGCKDY+f3tnR6rWNryhHNBo//IUyEPQsLq8YCDvhQ0UPHZZWMUowAx4/wMv5Rm17wQQ0=
