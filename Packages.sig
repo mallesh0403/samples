@@ -1,2 +1,2 @@
-untrusted comment: signed by key 10eee170735fbcc7
-RWQQ7uFwc1+8xyFKctGNA2vlANxfBujgLH1vgAA4bAXPbHyfwD6X8WNBYbO83FfnIxYv0LXjJAFqU14XhtEAolPHhmSaA8NQMA4=
+untrusted comment: signature from OpenWrt 18.06 release signature
+RWQQNaxzzE5Z43HM6znkTArY4mHePhUOCYew2w6wuLevNuTnqsRbKDL2fSkoMiqAbgoJcNyHjOEGuA00pcB0+R+sHnCvGmi2IAM=
