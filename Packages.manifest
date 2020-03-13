@@ -30,3 +30,14 @@ SHA256sum: 5d625dc05390a2fb6cccfeec86537ef489e932da0b1c5d91fce5e19e14cf51ee
 Description:  libugpio is a library to ease the use of linux kernel's sysfs
  gpio interface from C programs and/or other libraries.
 
+Package: hotspot
+Version: 1.20-1
+Depends: libc
+Source: feeds/packages/utils/hotspot
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 324489
+Filename: hotspot_1.21-1_aarch64_cortex-a53.ipk
+SHA256sum: 5f84208994b353f4a8aa8ba85c4975194d6b27c0678faca92d0bbcd23280f98d 
+Description:  A simple "p0 main binary to read data and write health data to watchdog" -application.
+
