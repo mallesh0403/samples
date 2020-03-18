@@ -43,5 +43,3 @@ Architecture: aarch64_cortex-a53
 Installed-Size: 931
 Filename: gateway.conf_1.2-1_aarch64_cortex-a53.ipk
 Description:  A simple "p0 lizard gateway config" -application.
-
-
