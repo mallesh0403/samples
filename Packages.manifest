@@ -1,0 +1,128 @@
+Package: gateway.conf
+Version: 1.2.0-1
+Depends: libc
+Source: feeds/packages/utils/gateway.conf
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 937
+Filename: gateway.conf_1.2.0-1_aarch64_cortex-a53.ipk
+Size: 1631
+SHA256sum: f0484ca9f27faeb0464893a6b2c25de78bee82b6a2701765c7c578dc0d3f752f
+Description:  A simple "all gateway configurations" -application.
+
+Package: hotspot
+Version: 1.22-1
+Depends: libc
+Source: feeds/packages/utils/hotspot
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 324489
+Filename: hotspot_1.22-1_aarch64_cortex-a53.ipk
+Size: 325120
+SHA256sum: b0656727f6338c375e6a6a56c3ddd599e7928378ae6d54b46c44a6e47610987c
+Description:  A simple "p0 main binary to read data and write health data to watchdog" -application.
+
+Package: libmcrypt
+Version: 2.5.8-2
+Depends: libc
+Source: feeds/packages/libs/libmcrypt
+License: LGPLv2.1
+LicenseFiles: COPYING.LIB
+Section: libs
+Maintainer: W. Michael Petullo <mike@flyn.org>
+Architecture: aarch64_cortex-a53
+Installed-Size: 61060
+Filename: libmcrypt_2.5.8-2_aarch64_cortex-a53.ipk
+Size: 61700
+SHA256sum: 13cc04fad587f7877d326e688c8f43e6ef4e997c9c90413a92140abc6e2da9f6
+Description:  libmcrypt is a cryptographic library that conveniently brings
+ together a variety of ciphers for convenient use.
+
+Package: libugpio
+Version: 0.0.6-1
+Depends: libc
+Source: feeds/packages/libs/libugpio
+License: LGPL-2.1+
+LicenseFiles: COPYING.LESSER
+Section: libs
+Maintainer: Michael Heimpold <mhei@heimpold.de>
+Architecture: aarch64_cortex-a53
+Installed-Size: 4130
+Filename: libugpio_0.0.6-1_aarch64_cortex-a53.ipk
+Size: 4924
+SHA256sum: 5d625dc05390a2fb6cccfeec86537ef489e932da0b1c5d91fce5e19e14cf51ee
+Description:  libugpio is a library to ease the use of linux kernel's sysfs
+ gpio interface from C programs and/or other libraries.
+
+Package: lz_p0_gw
+Version: 1.6-1
+Depends: libc
+Source: feeds/packages/utils/lz_p0_gw
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 324512
+Filename: lz_p0_gw_1.6-1_aarch64_cortex-a53.ipk
+Size: 325156
+SHA256sum: 90f144865d65d1ca44f6266e695ffc35f16f0f128e3282e3f83312d6542c6693
+Description:  A simple "p0 main binary to read data and write health data to watchdog" -application.
+
+Package: lz_p0_watchdog
+Version: 1.0-1
+Depends: libc
+Source: feeds/packages/utils/lz_p0_watchdog
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 48453
+Filename: lz_p0_watchdog_1.0-1_aarch64_cortex-a53.ipk
+Size: 49240
+SHA256sum: bb5ab3142b07e59895fc2f20837c64979e953f3302537286dc91b413c7703d49
+Description:  A simple "p0 lizard watchdog to read health data from main lizard binary " -application.
+
+Package: lz_p1_gw
+Version: 1.0-1
+Depends: libc
+Source: feeds/packages/utils/lz_p1_gw
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 324455
+Filename: lz_p1_gw_1.0-1_aarch64_cortex-a53.ipk
+Size: 325061
+SHA256sum: ff8347a325a23b7b9daac4571d3f2a2ddd1987c87b38af21506d91bf888e9d01
+Description:  A simple "p1 main binary" -application.
+
+Package: lz_p1_watchdog
+Version: 1.0-1
+Depends: libc
+Source: feeds/packages/utils/lz_p1_watchdog
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 48453
+Filename: lz_p1_watchdog_1.0-1_aarch64_cortex-a53.ipk
+Size: 49244
+SHA256sum: a2efb523410107cbcf13f799fd5bfa56e47ab9792f6b8178d0f116aaefc0d3ef
+Description:  A simple "p1 lizard watchdog to read health data from main lizard binary " -application.
+
+Package: lz_p2_gw
+Version: 1.0.0-1
+Depends: libc
+Source: feeds/packages/utils/lz_p2_gw
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 325596
+Filename: lz_p2_gw_1.0.0-1_aarch64_cortex-a53.ipk
+Size: 326269
+SHA256sum: e3ede9fcbca418bc4f6753b47b86f0625a51cc9a01aa12cdd249fa2879fdfe9f
+Description:  A simple "p2 main binary with uart hardend and added imei feature" -application.
+
+Package: lz_p2_watchdog
+Version: 1.0.0-1
+Depends: libc
+Source: feeds/packages/utils/lz_p2_watchdog
+Section: utils
+Architecture: aarch64_cortex-a53
+Installed-Size: 48569
+Filename: lz_p2_watchdog_1.0.0-1_aarch64_cortex-a53.ipk
+Size: 49368
+SHA256sum: 8af8199607654a9df8851dfea46605ac53111af14211c5e3efedb6bd1a3ed27e
+Description:  A simple "p2 lizard watchdog to read uart, network disk space status and get main lizard binary status " -application.
+
